@@ -5,14 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Weather App</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="fav.png" />
+
 </head>
 <body>
-  <div class="container">
-    <h1>Weather App</h1>
-    <input type="text" id="cityInput" placeholder="Enter city name" />
-    <button onclick="getWeather()">Get Weather</button>
-    <div id="weatherResult">Enter a city to get weather info.</div>
+  <h1>Weather Forecast</h1>
+
+  <!-- ✅ Wrap both sections in one parent -->
+  <div class="main-container">
+    
+    <!-- Left Section -->
+    <div class="left-section">
+      <div class="container">
+        <h2>Select City</h2>
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="weatherResult">Enter a city to get weather info.</div>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <div class="card">
+        <h3>Thursday</h3>
+        <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Clear" />
+        <p><strong>35°C</strong></p>
+        <p>clear sky</p>
+      </div>
+      <div class="card">
+        <h3>Friday</h3>
+        <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="Clouds" />
+        <p><strong>32°C</strong></p>
+        <p>few clouds</p>
+      </div>
+      <div class="card">
+        <h3>Saturday</h3>
+        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Rain" />
+        <p><strong>29°C</strong></p>
+        <p>light rain</p>
+      </div>
+      <div class="card">
+        <h3>Sunday</h3>
+        <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="Overcast" />
+        <p><strong>30°C</strong></p>
+        <p>overcast clouds</p>
+      </div>
+    </div>
+
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
+
